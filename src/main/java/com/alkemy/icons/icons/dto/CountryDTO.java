@@ -1,10 +1,8 @@
 package com.alkemy.icons.icons.dto;
 
-import com.alkemy.icons.icons.entity.IconEntity;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Getter

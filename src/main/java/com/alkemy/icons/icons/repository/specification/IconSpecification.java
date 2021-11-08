@@ -54,7 +54,7 @@ public class IconSpecification {
                 predicates.add(paisesId.in(filterDTO.getCities()));
             }
 
-            //Remove duplicates
+            //Remove duplicaters
             query.distinct(true);
 
             //Order by filtering

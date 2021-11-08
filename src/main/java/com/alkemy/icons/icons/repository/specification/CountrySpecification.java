@@ -31,7 +31,7 @@ public class CountrySpecification {
                 Long myId = Long.parseLong(filterDTO.getContinent());
                 System.out.println(myId);
                 predicates.add(
-                        criteriaBuilder.equal(root.get("continent_Id"), myId)
+                        criteriaBuilder.equal(root.get("continent_id"), myId)
                 );
             }
             query.distinct(true);
