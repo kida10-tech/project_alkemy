@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Set;
 
@@ -24,7 +23,7 @@ public class IconController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<IconDTO>> getAll() {
+    public ResponseEntity<List<IconDTO>> getAllIcons() {
         List<IconDTO> dtoList = this.iconService.getAll();
         return ResponseEntity.ok(dtoList);
     }

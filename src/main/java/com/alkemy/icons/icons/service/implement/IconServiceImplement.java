@@ -38,6 +38,7 @@ public class IconServiceImplement implements IconService {
     @Override
     public List<IconDTO> getAll() {
         List<IconEntity> iconEntities = iconRepository.findAll();
+        System.out.println("Aca estan los icons" + iconEntities);
         List<IconDTO> dtoList = iconMapper.iconEntityList2DTOList(iconEntities, true);
         return dtoList;
     }
@@ -82,6 +83,7 @@ public class IconServiceImplement implements IconService {
 
         IconEntity savedIcon = iconRepository.save(iconEntity);
         IconDTO savedDTO = iconMapper.iconEntity2DTO(savedIcon, false);
+
 
         return savedDTO;
     }

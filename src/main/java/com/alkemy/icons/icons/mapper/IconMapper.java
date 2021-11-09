@@ -40,6 +40,7 @@ public class IconMapper {
     public IconDTO iconEntity2DTO(IconEntity iconEntity, boolean findCountry) {
         IconDTO dto = new IconDTO();
 
+        dto.setId(iconEntity.getId());
         dto.setImage(iconEntity.getImage());
         dto.setName(iconEntity.getName());
 

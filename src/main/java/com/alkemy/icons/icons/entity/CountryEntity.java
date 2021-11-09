@@ -40,6 +40,8 @@ public class CountryEntity {
     inverseJoinColumns = @JoinColumn(name = "icon_id"))
     private Set<IconEntity> icons = new HashSet<>();
 
+    private boolean deleted = Boolean.FALSE;
+
     //Add icons to countries
     public void addIcon(IconEntity icon) {
         this.icons.add(icon);
